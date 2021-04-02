@@ -8,18 +8,18 @@
 
 \f0\fs24 \cf2 \expnd0\expndtw0\kerning0
 # 
-\f1 Hello Ling 539 \
-## My project will be hosted here.\
-**trying bold**\
-*trying italics*\
-- trying\
-- listing\
-- things\
+\f1 Hello Ling 539. \
+## My project will be hosted here.  \
+**trying bold**   \
+*trying italics*  \
+* trying  \
+* listing  \
+* things  \
 \uc0\u8232 \
-`inline code`\
+`inline code`  \
 \uc0\u8232 \
-```\
-Code block \{\
-\'85\
-\}\
+```javascript\
+Code block \{  \
+\'85  \
+\}  \
 ```}
