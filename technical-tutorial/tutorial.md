@@ -34,6 +34,15 @@ The current (as of May 2021) version of Lexique available for download is 3.83. 
 
 The DIMEx100 corpus is available for download from the [DIMEx100 site](https://turing.iimas.unam.mx/~luis/DIME/CORPUS-DIMEX.html). The zip file comes with three `diccionarios` that contain orthography and phonology information for the words in the corpus. We use `T22.full.dic` (the other two files contain more fine-grained phonological information).
 
+## Following along? 
+You can follow this tutorial with our git repository that contains the above corpora and a docker image with all WordKit requirements. Make sure you have `docker` installed on your machine
+1. Clone [this repository](https://github.com/lujahh/WordKitTutorial)
+2. On the terminal, navigate to the root of the cloned directory, and run the following command:
+```
+docker run -it  -v "$PWD:/app/" wordkit-tutorial
+```
+You will be able to run all of the following code from the terminal.
+
 ## Imports
 
 We use the following in this tutorial:
