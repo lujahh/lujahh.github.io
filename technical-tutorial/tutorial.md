@@ -39,7 +39,7 @@ You can follow this tutorial with our git repository that contains the above cor
 1. Clone [this repository](https://github.com/lujahh/WordKitTutorial)
 2. On the terminal, navigate to the root of the cloned directory, and run the following command:
 ```
-docker run -it  -v "$PWD:/app/" wordkit-tutorial
+docker run -it  -v "$PWD:/app/" lhh7/wordkit-tutorial
 ```
 You will be able to run all of the following code from the terminal.
 
