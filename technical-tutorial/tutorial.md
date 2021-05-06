@@ -54,7 +54,7 @@ This returns a pandas dataframe with the specified fields taken from Lexique 3.8
 
 For this tutorial, we are interested in orthography and phonology information, so we can call:
 ```python
-french = lexique("corpora/Lexique382.txt", fields = ("orthography", "phonology"))
+french = lexique('corpora/Lexique382.txt', fields = ('orthography', 'phonology'))
 
 #how many words are in Lexique 3.82? 
 print("{} words in French corpus".format(len(french)))
@@ -85,13 +85,13 @@ Now let's read in our Spanish corpus. There's no built-in for DIMEx100, but we c
 reader(pathtofile, fields)
 ```
 
-We want to read in all of the fields we have (orthography and phonology information), so we don't need to call fields. We additionally call `sep = "\t"` because our file is tab-separated and the default for `reader` is comma-separated.
+We want to read in all of the fields we have (orthography and phonology information), so we don't need to call fields. We additionally call `sep = '\t'` because our file is tab-separated and the default for `reader` is comma-separated.
 
 ```python
-spanish = reader("corpora/T22.full.dic", sep = "\t")
+spanish = reader('corpora/T22.full.dic', sep = '\t')
 
 #there are no headers in the dataset, so add those
-spanish.columns = ["orthography", "phonology"]
+spanish.columns = ['orthography', 'phonology']
 
 #how many words are in DIMEx100?
 print("{} words in Spanish corpus".format(len(spanish)))
@@ -188,7 +188,7 @@ print(spanish[100:110])
 
 Success! Our `french` and `spanish` dataframes are in the same format.
 
-3. Featurizing the phonological information
+## 3. Featurizing the phonological information
 
 We can now concatenate our dataframes to create one dataframe to be used in a classification task. 
 
